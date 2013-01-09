@@ -1,0 +1,25 @@
+Set up a top login block
+
+1. Create login.phtml in page/html with code:
+
+<form action="/customer/account/loginPost/" method="post" id="login-form">
+<div class="sb_login_email">
+<label for="email">EMAIL ADDRESS</label>
+<input type="text" title="Email Address" name="login[username]" id="email" class="validate-email input-text required-entry" />
+</div>
+<div class="sb_login_pass">
+<label for="password">PASSWORD</label>
+<input type="password" title="Password" name="login[password]" class="validate-password input-text required-entry" />
+</div>
+<input type="submit" value="login" class="sb_login_submit" />
+</form>
+
+
+2. Add the link to the header.phtml
+
+<?php echo $this->getChildHtml('topLogin') ?>
+
+
+3. In page.xml with the <block type="page/html_header" name="header" as="header"> section add:
+
+<block type="core/template" name="top.login" as="topLogin" template="page/html/login.phtml"/>

@@ -1,0 +1,38 @@
+Country,Region/State,City,Zip/Postal Code,Zip to,Weight from,Weight to,Price From,Price To,Item From,Item To,Shipping Price,Algorithm,Delivery Type,Sort Order
+GBR,*,*,*,*,0,*,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,*,*,0,*,0,*,*,*,1.5,,UPS Next Day Guaranteed*,*
+GBR,*,*,*,*,0,6,0,*,*,*,7.99,,Saturday Delivery if Ordered before 3pm*,*
+GBR,*,*,BT,*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,BT,*,21,*,0,*,*,*,15.99,,UPS Courier 1-3 Days,*
+GBR,*,*,"FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"IM,IOM",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"IM,IOM",*,21,*,0,*,*,*,5.99,,UPS Isle of Man 2-3 Working Days,*
+GBR,*,*,"IV1,IV2,IV3,IV4,IV5,IV6,IV7,IV8,IV9,IV10,IV11,IV12,IV13,IV14,IV15,IV16,IV17,IV18,IV19,IV20,IV21,IV22,IV23,IV24,IV25,IV26,IV27,IV28,IV30,IV31,IV32,IV36,IV40,IV41,IV42,IV43,IV44,IV45,IV46,IV47,IV48,IV49,IV51,IV52,IV53,IV54,IV55,IV56,IV63",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"IV1,IV2,IV3,IV4,IV5,IV6,IV7,IV8,IV9,IV10,IV11,IV12,IV13,IV14,IV15,IV16,IV17,IV18,IV19,IV20,IV21,IV22,IV23,IV24,IV25,IV26,IV27,IV28,IV30,IV31,IV32,IV36,IV40,IV41,IV42,IV43,IV44,IV45,IV46,IV47,IV48,IV49,IV51,IV52,IV53,IV54,IV55,IV56,IV63",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"KA27,KA28,KW1,KW10,KW11,KW12,KW13,KW14,KW15,KW16,KW17,KW2,KW3,KW4,KW5,KW6,KW7,KW8,KW9",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"KA27,KA28,KW1,KW10,KW11,KW12,KW13,KW14,KW15,KW16,KW17,KW2,KW3,KW4,KW5,KW6,KW7,KW8,KW9",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"PA20,PA23,PA24,PA25,PA26,PA27,PA28,PA29,PA30,PA31,PA32,PA33,PA34,PA35,PA36,PA37,PA38,PA40,PA41,PA42,PA43,PA44,PA45,PA46,PA47,PA48,PA49,PA60,PA61,PA62,PA63,PA64,PA65,PA66,PA67,PA68,PA69,PA70,PA71,PA72,PA73,PA74,PA75,PA76,PA77,PA78,PA87,PA88,PH17,PH18,PH19,PH20,PH21,PH22,PH23,PH24,PH25,PH26,PH30,PH31,PH32,PH33,PH34,PH35,PH36,PH37,PH38,PH39,PH40,PH41,PH42,PH43,PH44,PH49,PH50",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"PA20,PA23,PA24,PA25,PA26,PA27,PA28,PA29,PA30,PA31,PA32,PA33,PA34,PA35,PA36,PA37,PA38,PA40,PA41,PA42,PA43,PA44,PA45,PA46,PA47,PA48,PA49,PA60,PA61,PA62,PA63,PA64,PA65,PA66,PA67,PA68,PA69,PA70,PA71,PA72,PA73,PA74,PA75,PA76,PA77,PA78,PA87,PA88,PH17,PH18,PH19,PH20,PH21,PH22,PH23,PH24,PH25,PH26,PH30,PH31,PH32,PH33,PH34,PH35,PH36,PH37,PH38,PH39,PH40,PH41,PH42,PH43,PH44,PH49,PH50",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"PO30,PO31,PO32,PO33,PO34,PO35,PO36,PO37,PO38,PO39,PO40,PO41",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"PO30,PO31,PO32,PO33,PO34,PO35,PO36,PO37,PO38,PO39,PO40,PO41",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"ZE1,ZE2,ZE3",*,0,20,0,*,*,*,0,,Free Delivery 1-3 Days,*
+GBR,*,*,"ZE1,ZE2,ZE3",*,21,*,0,*,*,*,5.99,,UPS Islands & Highlands 2-3 Working Days,*
+GBR,*,*,"JE,GY",*,0,20,0,*,*,*,0,,UPS Offshore 3-5 Working Days,*
+GBR,*,*,"JE,GY",*,21,5000,0,*,*,*,15.99,,UPS Offshore 3-5 Working Days,*
+"BEL,IRL,LUX,JEY,GGY,NLD",*,*,*,*,0,10,0,*,*,*,7.99,,DHL Economy Road Zone 1,*
+"BEL,IRL,LUX,JEY,GGY,NLD",*,*,*,*,11,6000,0,*,*,*,21.99,,DHL Economy Road Zone 1,*
+"BEL,IRL,LUX,JEY,GGY,NLD",*,*,*,*,6001,*,0,*,*,*,0,,Email for Pricing,*
+"FRA,DEU",*,*,*,*,0,10,0,*,*,*,7.99,,UPS Economy Road Zone 2,*
+"FRA,DEU",*,*,*,*,11,6000,0,*,*,*,17.99,,UPS Economy Road Zone 2,*
+"FRA,DEU",*,*,*,*,6001,*,0,*,*,*,0,,Zone 1 Email for Pricing,*
+"AUT,ITA,PRT,ESP",*,*,*,*,0,10,0,*,*,*,7.99,,UPS Economy Road Zone 3,*
+"AUT,ITA,PRT,ESP",*,*,*,*,11,6000,0,*,*,*,19.99,,UPS Economy Road Zone 3,*
+"AUT,ITA,PRT,ESP",*,*,*,*,6001,*,0,*,*,*,0,,Zone 2 Email for Pricing,*
+"DNK,FIN,SWE",*,*,*,*,0,10,0,*,*,*,7.99,,UPS Economy Road Zone 3,*
+"DNK,FIN,SWE",*,*,*,*,11,6000,0,*,*,*,23.99,,UPS Economy Road Zone 3,*
+"DNK,FIN,SWE",*,*,*,*,6001,*,0,*,*,*,0,,Zone 3 Email for Pricing,*
+"CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,0,10,0,*,*,*,7.99,,UPS Economy Road Zone 4,*
+"CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,11,6000,0,*,*,*,27.99,,UPS Economy Road Zone 4,*
+"CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,6001,*,0,*,*,*,0,,Zone 4 Email for Pricing,*
+*,*,*,*,*,0,*,0,*,*,*,12.99,,Worldwide Delivery RM Signed For,*

@@ -1,0 +1,31 @@
+Just copy paste the below code in header.phtml and run yourmagento once, your attribute will be created and you can see in backend under manage category. After you are done remove this code again.
+
+ ------------------------------------------------------------------------------------------
+
+$setup = new Mage_Eav_Model_Entity_Setup('core_setup');
+$setup->addAttribute('category', 'uitslag', array(
+                     'label'     => 'Uitslag',
+                     'type'  => 'varchar',
+                     'input'     => 'text',
+                     'visible'  => true,
+                     'required' => false,
+                     'position' => 1,
+));
+
+
+or to add an image field
+
+
+$setup = new Mage_Eav_Model_Entity_Setup('core_setup');
+
+$setup->addAttribute('catalog_category', 'sliderimage', array(
+    'group'         => 'General',
+    'input'         => 'image',
+    'type'          => 'varchar',
+    'label'         => 'Slider Image',
+    'backend'       => 'catalog/category_attribute_backend_image',
+    'visible'       => 1,
+    'required'        => 0,
+    'user_defined' => 1,
+    'global'        => Mage_Catalog_Model_Resource_Eav_Attribute::SCOPE_GLOBAL,
+));

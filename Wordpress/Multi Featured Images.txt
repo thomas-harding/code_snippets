@@ -1,0 +1,29 @@
+Multi Featured Images
+
+Step 1
+Install /plugins/multiple-featured-images
+
+Step 2
+Add following code to functions.php
+if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+
+        $args = array(
+                'id' => 'featured-image-2',
+                'post_type' => 'post',      // Set this to post or page
+                'labels' => array(
+                    'name'      => 'Featured image 2',
+                    'set'       => 'Set featured image 2',
+                    'remove'    => 'Remove featured image 2',
+                    'use'       => 'Use as featured image 2',
+                )
+        );
+
+        new kdMultipleFeaturedImages( $args );
+}
+
+
+Step 3
+Add following code to template file
+if( class_exists( 'kdMultipleFeaturedImages' ) ) {
+    kd_mfi_the_featured_image( 'featured-image-2', 'post' );
+}

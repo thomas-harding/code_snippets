@@ -1,0 +1,116 @@
+CSS3 Sub Menus
+
+HTML
+
+<div class="left_navigation">
+        	<ul>
+            	<a href="/"><li>Home</li></a>
+            	<li class="parent"><a href="/about">About Us</a>
+                    	<ul id="sub_menu" class="about_sub">
+                        	<a href="/"><li>What is Nutritional Therapy?</li></a>
+                        	<a href="/"><li>What can I expect in my consultation? </li></a>
+                        	<a href="/"><li>What changes will I have to make? </li></a>
+                        	<a href="/"><li>What conditions can be treated? </li></a>
+                        </ul></li>
+            	<li class="parent"><a href="/health-aliments">Health & Ailments</a>
+                    	<ul id="sub_menu" class="health_sub">
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        </ul></li>
+            	<li class="parent"><a href="/testing">Testing</a>
+                    	<ul id="sub_menu" class="testing_sub">
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        	<a href="/"><li>Sub Menu 1</li></a>
+                        </ul></li>
+            	<a href="/blog-workshop"><li>Blog & Workshop</li></a>
+            	<a href="/recipes"><li>Recipes</li></a>
+            	<a href="/bookings"><li>Bookings & Consultations</li></a>
+            </ul>
+        </div><!-- end left_navigation -->
+
+
+CSS
+
+/** Standard CSS **/
+.left_navigation{width:960px;float:left;position:relative;}
+.left_navigation ul{width:250px;border-top:2px solid #89c43e;padding-left:0px;margin:0px;}
+.left_navigation ul li{list-style:none;font-size:1em;font-family: 'ITCNovareseMedium', Georgia, serif;color:#417321;height:30px;line-height:30px;width:250px;border-bottom:1px solid #89c43e;}
+.left_navigation a{text-decoration:none;color:#417321;}
+.left_navigation a:hover li{color:#89c43e;}
+.left_navigation ul li.parent{background:url(../img/menu_arrow.png) right transparent no-repeat;}
+.left_navigation ul#sub_menu li{font-size:0.8em;height:30px;line-height:30px;}
+
+/** custom to each sub menu **/
+.left_navigation ul.about_sub{top:30px;}
+.left_navigation ul.health_sub{top:62px;}
+.left_navigation ul.testing_sub{top:93px;}
+
+/** Advanced CSS3 **/
+.left_navigation li:hover ul#sub_menu{ width:250px; }
+.left_navigation ul#sub_menu{left:260px;
+	width:0px;
+	position:absolute;
+	overflow:hidden;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: 0.25s;
+	
+	/* Future proofing (these do not work yet): */
+	-moz-transition: 0.25s;
+	transition: 0.25s;}
+
+height adjustment
+.left_navigation li:hover ul#sub_menu{ height:auto;max-height:400px;width:100px;}
+.left_navigation ul#sub_menu{top:20px;
+	background:#30A1DB;
+	width:100px;
+	font-size:0.8em;
+	max-height:0px;
+	height:0px;
+	position:absolute;
+	overflow:hidden;
+	
+	/* CSS3 Transition: */
+	-webkit-transition: max-height .5s linear;
+    -moz-transition: max-height .5s linear;
+    transition: max-height .5s linear;
+	}
+
+
+
+/** Mobile Fix **/
+@media screen and (max-device-width: 480px){
+        #menu ul {
+        margin: 20px 0 0 0;
+        _margin: 0; /*IE6 only*/
+        opacity: 1;
+        visibility: hidden;
+        position: absolute;
+        top: 40px;
+        left: 0px;
+        z-index: 9999;
+        background: #444;
+        background: -moz-linear-gradient(#444, #111);
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0, #111),color-stop(1, #444));
+        background: -webkit-linear-gradient(#444, #111);
+        background: -o-linear-gradient(#444, #111);
+        background: -ms-linear-gradient(#444, #111);
+        background: linear-gradient(#444, #111);
+        -moz-box-shadow: 0 -1px rgba(255,255,255,.3);
+        -webkit-box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+        box-shadow: 0 -1px 0 rgba(255,255,255,.3);
+        -webkit-transition: none;
+        -moz-transition: none;
+        -ms-transition: none;
+        -o-transition: none;
+        transition: none;
+}
+
+#menu li:hover ul {
+        opacity: 1;
+        visibility: visible;
+        margin: 0;
+}
+}

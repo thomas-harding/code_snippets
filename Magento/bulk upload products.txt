@@ -1,0 +1,8 @@
+Bulk upload of products in Magento including images
+
+
+To make things easy, select your store in the Magento admin, go to a category in that store and create a sample product, including adding an image. Once complete, go to “System>Import/Export>Profiles” and select “Export All Products”. Select the store where you just created your sample product. Click the “Save and Continue Editing” button, then go to “Run Profile”.
+Once completed, ftp to your server and navigate to var/export and retrieve your file to your desktop. Open the csv file in your spreadsheet program and now you have a model to work with.
+Populate all fields of your spreadsheet with your product information. IMPORTANT: For your image files, put the name in the fields making sure you put a forward slash (/) in front of the image name.
+Once complete, you will need to do one more thing before import and this is critical. Upload all of your images to the media/import directory on your server.
+Now, when you do your import through the Magento admin, the import script will include your image in the upload. It sounds crazy, but this is the only way to accomplish a successful upload including images in Magento.

@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Parallax Test</title>
+<style type="text/css">
+*{margin:0px;padding:0px;}
+#content {
+    min-height: 115%;
+}
+h1{color:#fff;}
+.wrapper{width:3000px;float:left;height:1000px;}
+.page_1{width:1000px;position:absolute;top:0px;left:0px;z-index:10;padding:30px;}
+.page_2{width:1000px;position:absolute;top:0px;left:1000px;z-index:10;padding:30px;}
+.page_3{width:1000px;position:absolute;top:0px;left:2000px;z-index:10;padding:30px;}
+
+.content{background:#fff;width:500px;padding:30px;margin-top:30px;}
+.content p{color:#000;}
+
+#aeroplane{position:absolute;left:50px;}
+
+#background1 {
+    z-index: 0;
+    position: fixed;
+    left: 0; /* align left edge with center of viewport */
+    top: 0;
+    width: 3000px;
+}
+#foreground1 {
+    z-index: 100;
+    position: fixed;
+    left: 0; /* align left edge with center of viewport */
+    top: 0;
+    width: 1000px;
+}
+</style>
+
+		<!-- Grab Google CDN's jQuery. fall back to local if necessary --> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script> 
+
+</head>
+
+<body>
+<div id="content">
+	<div class="page_1">
+    	<h1>Page 1</h1>
+   		<div class="content">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus porta rhoncus. Suspendisse nisl justo, congue at mattis vitae, suscipit ut eros. Integer vitae ipsum nibh. Nullam viverra vestibulum dolor, nec scelerisque risus gravida vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ut purus ante. Praesent ipsum urna, consectetur blandit faucibus sed, congue quis diam. Ut consectetur tellus ut diam mollis posuere. Donec nec mauris quam. Sed facilisis, nulla sed hendrerit pulvinar, ante enim accumsan lorem, nec vulputate ipsum tellus non lorem. Nam lobortis tellus eu magna semper vitae ultricies est tristique.</p>
+        </div>
+    </div>
+	<div class="page_2">
+    	<h1>Page 2</h1>
+   		<div class="content">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus porta rhoncus. Suspendisse nisl justo, congue at mattis vitae, suscipit ut eros. Integer vitae ipsum nibh. Nullam viverra vestibulum dolor, nec scelerisque risus gravida vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ut purus ante. Praesent ipsum urna, consectetur blandit faucibus sed, congue quis diam. Ut consectetur tellus ut diam mollis posuere. Donec nec mauris quam. Sed facilisis, nulla sed hendrerit pulvinar, ante enim accumsan lorem, nec vulputate ipsum tellus non lorem. Nam lobortis tellus eu magna semper vitae ultricies est tristique.</p>
+        </div>
+    </div>
+	<div class="page_3"><h1>Page 3</h1>
+   		<div class="content">
+        	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam rhoncus porta rhoncus. Suspendisse nisl justo, congue at mattis vitae, suscipit ut eros. Integer vitae ipsum nibh. Nullam viverra vestibulum dolor, nec scelerisque risus gravida vestibulum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vestibulum ut purus ante. Praesent ipsum urna, consectetur blandit faucibus sed, congue quis diam. Ut consectetur tellus ut diam mollis posuere. Donec nec mauris quam. Sed facilisis, nulla sed hendrerit pulvinar, ante enim accumsan lorem, nec vulputate ipsum tellus non lorem. Nam lobortis tellus eu magna semper vitae ultricies est tristique.</p>
+        </div></div>
+</div>
+<!-- Parallax foreground -->
+			<div id="parallax-bg3">
+				<img id="bg3-1" src="grass-3.png" />
+				<img id="bg3-2" src="grass-3.png" />
+				<img id="bg3-3" src="grass-3.png" />
+				<img id="bg3-4" src="grass-3.png" />
+			</div>
+			
+			<!-- Parallax  midground clouds -->
+			<div id="parallax-bg2">
+				<img id="bg2-1" src="grass-1.png" alt="cloud"/>
+				<img id="bg2-2" src="grass-1.png" alt="cloud"/>
+				<img id="bg2-3" src="grass-1.png" alt="cloud"/>
+				<img id="bg2-4" src="grass-1.png" alt="cloud"/>
+				<img id="bg2-5" src="grass-1.png" alt="cloud"/>
+			</div>
+			
+			<!-- Parallax  background clouds -->
+			<div id="parallax-bg1">
+				<img id="bg1-1" src="grass-2.png" alt="cloud"/>
+				<img id="bg1-2" src="grass-2.png" alt="cloud"/>
+				<img id="bg1-3" src="grass-2.png" alt="cloud"/>
+				<img id="bg1-4" src="grass-2.png" alt="cloud"/>
+			</div>
+            
+            
+ <script type="text/javascript" src="jquery.scrolling-parallax.js"></script>
+<script type="text/javascript">
+
+$(function() {
+	
+$.scrollingParallax('grass.png', {
+    bgHeight : '100%',
+enableHorizontal : true,
+staticSpeedX : .3,
+loopItX : true,
+appendInFront : true,
+zIndex : 10
+}); 
+
+	$.scrollingParallax('background_top.png', {
+    bgHeight : '30%',
+    enableHorizontal : true
+});
+   
+    $.scrollingParallax('background.jpg', {
+    bgHeight : '100%',
+    enableHorizontal : true,
+	reverseDirection : true,
+	staticSpeedX: .5,
+});
+
+    
+    
+});
+
+</script>
+</body>
+</html>

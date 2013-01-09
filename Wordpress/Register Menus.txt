@@ -1,0 +1,13 @@
+Setup function in functions.php file:
+
+function register_my_menus() {
+	  register_nav_menus(
+		array( 'main-menu' => __( 'Main Menu' ))
+	  );
+	}
+	add_action( 'init', 'register_my_menus' );
+
+
+To call the menu use:
+
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>

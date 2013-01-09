@@ -1,0 +1,5 @@
+Full Height on a floated column without setting height
+
+.main_content{overflow:hidden;}
+
+.left_column{padding-bottom:100%;margin-bottom:-100%;}

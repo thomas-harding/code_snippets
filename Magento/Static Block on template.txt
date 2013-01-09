@@ -1,0 +1,15 @@
+Static Block on template
+
+In the relevant layout file:
+
+<block type="cms/block" name="ad_space"><action method="setBlockId"><block_id>adspacehomepage</block_id></action></block>
+
+In the template .phtml file:
+
+<?php echo $this->getChildHtml('ad_space'); ?>
+
+
+------ or ------
+
+
+<?php echo $this->getLayout()->createBlock('cms/block')->setBlockId('footer-block-1')->toHtml() ?>

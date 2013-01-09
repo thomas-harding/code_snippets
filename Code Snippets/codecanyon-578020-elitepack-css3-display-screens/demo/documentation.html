@@ -1,0 +1,370 @@
+<!DOCTYPE html> 
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-US" xml:lang="en">
+<head>
+    <title>Documentation | Elitepack CSS3 Tags</title>
+    <meta http-equiv="content-type" content="text/x-component; charset=utf-8" />
+	<meta name="description" content="Description" />
+    <meta name="keywords" content="Keywords" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/all.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/gfonts.css" type="text/css" media="screen" />
+    <!--[if IE 6]><link rel="stylesheet" href="css/style.ie6.css" type="text/css" media="screen" /><![endif]-->
+    <!--[if IE 7]><link rel="stylesheet" href="css/style.ie7.css" type="text/css" media="screen" /><![endif]-->
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div id="page-background-glare-wrapper">
+    <div id="page-background-glare"></div>
+</div>
+<div id="main">
+    <div class="cleared reset-box"></div>
+    <div class="header">
+        <div class="header-wrapper">
+            <div class="cleared reset-box"></div>
+            <div class="header-inner">
+            <div class="logo">
+                         <h1 class="logo-name"><a href="./index.html">Elitepack CSS3</a></h1>
+                                     <h2 class="logo-text">Display Screens</h2>
+                        </div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="cleared reset-box"></div>
+<div class="bar nav">
+<div class="nav-outer">
+<div class="nav-wrapper">
+<div class="nav-inner">
+	<ul class="hmenu">
+		<li><a href="./index.html">Tablet</a></li>	
+		<li><a href="./index2.html">Laptop</a></li>
+		<li><a href="./index3.html">Monitor</a></li>
+		<li><a href="./index4.html">Phone</a></li>
+		<li><a href="./all.html">All</a></li>
+		<li><a href="./documentation.html" class="active">Documentation</a>
+		</li>	
+	</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="cleared reset-box"></div>
+<div class="box sheet">
+        <div class="box-body sheet-body">
+            <div class="layout-wrapper">
+                <div class="content-layout">
+                    <div class="content-layout-row">
+                        <div class="layout-cell content">
+
+						<div class="box post tutorial">
+							<div class="box-body post-body">
+						<div class="post-inner article">
+                            
+							<h2 class="postheader">Documentation</h2>
+							<div class="postheadericons">Created: 09/27/2011</div>
+							 <div class="postcontent">
+							<p>Hey there! I want to thank you very much for purchasing my item. If you have any questions that are beyond the scope of this help file or any suggestions that can be done to improve this item, please feel free to contact me via <a href="http://codecanyon.net/user/arrowart">my user page contact form</a> or mail me directly at: support@arrowthemes.com</p>
+							
+							<span class="style-title">Table of Contents</span>
+							<ol>
+								<li><a href="#Elitepack">What is Elitepack CSS3</a></li>
+								<li><a href="#File_structure">CSS File Structure</a></li>
+								<li><a href="#include_head">Including the CSS in your HTML header</a></li>
+								<li><a href="#implementing">Implementing the CSS3 display screens</a></li>
+								<li><a href="#add_content">Adding media content to your display</a></li>
+								<li><a href="#dimensions">Increasing size and changing dimensions</a></li>
+								<li><a href="#credits">Credits</a></li>
+
+							</ol>
+							<h2 id="Elitepack" class="postheader">1. What is Elitepack CSS3? </h2>
+							
+							<p><img style="float: right" src="images/css3.png" alt="css3"/> <strong>Elitepack CSS3</strong> is a collection of web elements that are designed with pure CSS3 technology meaning that no images have been used except the small icons or background images. This particular pack is the CSS3 display screens which are a nice modern way of showcasing your application, website or portfolio gallery using CSS3 powered display 'vectors'</p>
+							<img src="images/detail.png" alt="phone"/>
+							<p>By using CSS3 and a few lines of HTML code to create display screens, it greatly improves the load time of your site, while giving you the flexibility to change dimensions, orientation, color, functionality and practically anything without opening your favorite graphic software.</p>
+							
+							<h2 id="File_structure" class="postheader">2. CSS File Structure </h2>
+							<p>Once you download the zipped file, extract it to a local folder or on your server via FTP. You will find 2 folders within: demo and css: </p>
+							<ul>
+							<li><strong>demo</strong> - This is a working HTML version showcasing the css3 tags in use</li>
+							<li><strong>css</strong> - the css3 display screens pack. To use it in your website, copy the entire css folder and paste it in the root folder of your site then reference the css stylesheet appropriately</li>
+							</ul>
+							
+							<h2 id="include_head" class="postheader">3. Including the CSS in your HTML/PHP header </h2>
+							<p><strong>NOTE: </strong>This section assumes you have the basic knowledge in HTML/PHP and how to apply CSS stylesheets in your header.</p>
+							<p>To add the css stylesheets into your website (whether HTML, PHP or any other language that utilizes stylesheets) simply add the following code in the head section of your HTML File.</p>
+							<ul class="showhide"> 
+										<li class="open"> 
+											<h3 class="title">View the code</h3> 
+											<div> 
+												<pre>&lt;link rel=&quot;stylesheet&quot; href=&quot;css/phone.css&quot; type=&quot;text/css&quot; media=&quot;screen&quot; /&gt;</pre> 
+											</div> 
+										</li> 
+								</ul>
+							
+							<h2 id="implementing" class="postheader">4. Implementing the CSS3 display screens</h2>
+							<p>Once you have included your preferred css stylesheet in your header section, you are ready to roll. To create a phone using CSS3, insert a div tag (denoted as &lt;div class=&quot;tablet&quot;&gt;) and add a class with the name <strong>'tablet'</strong>. Within the class section, add three other divs and insert  the classes  <strong>glare-t, screen-t, addons-t, and button-t</strong> in that order. </p>
+								<ul class="showhide"> 
+										<li class="open"> 
+											<h3 class="title">code to create a tablet:</h3> 
+											<div>
+												<pre>&lt;div class=&quot;tablet white&quot;&gt;
+&lt;div class=&quot;glare-t&quot;&gt;&lt;/div&gt; 
+&lt;div class=&quot;screen-t&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;addons-t&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;button-t&quot;&gt;&lt;/div&gt;  
+&lt;/div&gt;</pre> 
+											</div> 
+										</li> 
+								</ul>
+								
+							<span class="style-title">Result:</span>
+							<div class="showcase" style="text-align: center">
+								<div class="tablet">
+								<div class="glare-t"></div>
+									<div class="screen-t"></div>  
+									<div class="addons-t"></div>
+									<div class="button-t"></div>  
+								</div>
+							</div>
+							<ul class="showhide"> 
+										<li class="open"> 
+							<h3 class="title">code to create a laptop:</h3> 
+											<div>
+												<pre>&lt;div class=&quot;laptop&quot; &gt;
+	&lt;div class=&quot;screen-l&quot;&gt;&lt;/div&gt;  
+	&lt;div class=&quot;glare-l&quot;&gt;&lt;/div&gt;  
+	&lt;div class=&quot;base-l  top-base-shadow&quot;&gt;&lt;/div&gt;  
+	&lt;div class=&quot;addons-l&quot;&gt;&lt;/div&gt; 
+	&lt;div class=&quot;button-l&quot;&gt;&lt;/div&gt; 
+&lt;/div&gt;</pre> 
+											</div> 
+										</li> 
+								</ul>
+								
+							<span class="style-title">Result:</span>
+							<div class="showcase" style="text-align: center">
+							<div class="laptop">
+								<div class="glare-l"></div>
+								<div class="screen-l"></div>
+								<div class="base-l top-base-shadow"></div>
+								<div class="addons-l"></div>
+								<div class="button-l"></div>
+							</div> 		
+							</div> 		
+							
+							<ul class="showhide"> 
+										<li class="open"> 
+							<h3 class="title">code to create a monitor:</h3> 
+											<div>
+												<pre>&lt;div class=&quot;monitor&quot;&gt;
+	&lt;div class=&quot;glare-m&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;screen-m&quot;&gt;lt;/div&gt;
+	&lt;div class=&quot;base-m&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;top-base-shadow&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;stand-m&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre> 
+											</div> 
+										</li> 
+								</ul>
+								
+							<span class="style-title">Result:</span>
+							<div class="showcase" style="text-align: center">
+							<div class="monitor">
+								<div class="glare-m"></div>
+								<div class="screen-m"></div>
+								<div class="base-m"></div>
+								<div class="top-base-shadow"></div>
+								<div class="stand-m"></div>
+							</div>		
+							</div>		
+						
+						<br/>
+						<br/>
+						<br/>
+						<br/>
+							
+						<ul class="showhide"> 
+							<li class="open"> 
+							<h3 class="title">code to create a phone:</h3> 
+											<div>
+												<pre>&lt;div class=&quot;phone&quot; &gt;
+	&lt;div class=&quot;screen-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;camera-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;glare-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;addons-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;side-buttons-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;dividers-p&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;button-p&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre> 
+											</div> 
+										</li> 
+								</ul>
+								
+							<span class="style-title">Result:</span>
+							<div class="showcase" style="text-align: center">
+							<div class="phone" >
+									<div class="screen-p"></div>  <!--the display screen of the phone-->
+									<div class="camera-p"></div> <!--front camera  -->
+									<div class="glare-p"></div> <!--front camera  -->
+									<div class="addons-p"></div> <!--top button and speaker -->
+									<div class="side-buttons-p"></div> <!--side buttons-->
+									<div class="dividers-p"></div> <!--small black dividers on the casing-->
+									<div class="button-p"></div> <!--bottom button-->
+								</div>
+								</div>
+							
+							<h2 id="add_content" class="postheader">5. Adding media content to your display</h2>
+							<p>Once you create your display screens, you can add any kind of media within the <strong>'screen-?'</strong> div where ? stands for the letter denoting the different display screens. e.g. screen-p for phone.css. You can use images, slideshows, iframes to show hosted videos or webpages, HTML5 video and pratically any other media.</p>
+							
+							<p>The following example shows a self hosted video using HTML5 semantics  on a phone: (check out the <a href="./index4.html">phone examples</a> on how to add video tags or iframes to your display)</p>
+							<div class="showcase" style="text-align: center">
+							<div class="phone top-light-shadow rotate">
+								<div class="glare-p"></div>
+								<div class="screen-p">
+									 <div class="video-container">
+									 <!-- Begin VideoJS -->
+											  <div class="video-js-box">
+												<!-- Using the Video for Everybody Embed Code http://camendesign.com/code/video_for_everybody -->
+												<video class="video-js" width="255" height="182" controls preload poster="./video/envato_p_h.png">
+												  <source src="./video/envato_sting.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+												  <source src="./video/envato_sting.webm" type='video/webm; codecs="vp8, vorbis"' />
+												  <source src="./video/envato_sting.ogv" type='video/ogg; codecs="theora, vorbis"' />
+												  <!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+												  <object class="vjs-flash-fallback" width="255" height="182" type="application/x-shockwave-flash"
+													data="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf">
+													<param name="movie" value="http://releases.flowplayer.org/swf/flowplayer-3.2.1.swf" />
+													<param name="allowfullscreen" value="true" />
+													<param name="flashvars" value='config={"playlist":["http://video-js.zencoder.com/oceans-clip.png", {"url": "http://video-js.zencoder.com/oceans-clip.mp4","autoPlay":false,"autoBuffering":true}]}' />
+													<!-- Image Fallback. Typically the same as the poster image. -->
+													<img src="./video/envato_p_h.png" width="255" height="182" alt="Poster Image"
+													  title="No video playback capabilities." />
+												  </object>
+												</video>
+												<!-- Download links provided for devices that can't play video in the browser. -->
+												<p class="vjs-no-video"><strong>Download Video:</strong>
+												  <a href="./video/envato_sting.mp4">MP4</a>,
+												  <a href="./video/envato_sting.webm">WebM</a>,
+												  <a href="./video/envato_sting.ogv">Ogg</a><br>
+												  <!-- Support VideoJS by keeping this link. -->
+												  <a href="http://videojs.com">HTML5 Video Player</a> by VideoJS
+												</p>
+											  </div>
+									 <!-- End VideoJS -->
+											  
+											 </div>
+								</div>
+								<div class="camera-p"></div>
+								<div class="addons-p"></div>
+								<div class="side-buttons-p"></div>
+								<div class="dividers-p"></div>
+								<div class="button-p"></div>
+							</div>
+							</div>
+							<h2 id="dimensions" class="postheader">6. Increasing size and changing dimensions</h2>
+							<p>There are two ways that you can increase or decrease the size of a display screen: </p>
+							<ul>
+							<li>By using the <strong>transform element of CSS3</strong>: you do so by adding a scale vector to the outermost div e.g. tablet or laptop to increase or decrease the size of the display screen. The default size is 1.</li>
+							<li>By <strong>adjusting the width and height uniformly </strong>until the desired size is attained. Use a web css tool like firebug to help you see the actual effect of the adjustments</li>
+							</ul>
+							<span class="style-title">A phone magnified by 0.5x</span>
+							<div class="cleared"></div>
+							<div class="showcase" style="text-align: center">
+							<div class="phone" style="  -webkit-transform: scale(0.5);   -moz-transform: scale(0.5);  -o-transform: scale(0.5);  -ms-transform: scale(0.5);  -khtml-transform: scale(0.5);  transform: scale(0.5)" >
+									<div class="screen-p"></div>  <!--the display screen of the phone-->
+									<div class="camera-p"></div> <!--front camera  -->
+									<div class="addons-p"></div> <!--top button and speaker -->
+									<div class="side-buttons-p"></div> <!--side buttons-->
+									<div class="dividers-p"></div> <!--small black dividers on the casing-->
+									<div class="button-p"></div> <!--bottom button-->
+								</div>
+								</div>
+							
+							
+			
+				<h2 id="credits" class="postheader">7. Credits </h2>
+            
+					<ul>
+						<li>Background image by <a href="http://fav.me/d2qrhal">jason_h</a>
+					</ul>
+				</div>
+                <div class="cleared"></div>
+                </div>
+
+		<div class="cleared"></div>
+    </div>
+</div>
+
+                          <div class="cleared"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cleared"></div>
+    		<div class="cleared"></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-body">
+            <div class="footer-center">
+                <div class="footer-wrapper">
+                    <div class="footer-text">
+                        <p><br /></p><br />
+<br />
+<h3 style="text-align: left">Checkout this related items</h3><br />
+<p style="text-align: left">
+<a href="http://codecanyon.net/item/elitepack-classic-css3-buttons/470602?ref=arrowart"><img src="http://0.s3.envato.com/files/6080323/elitepack_buttons_thumb.png" alt="Elitepack CSS3 Buttons" /></a>
+<a href="http://codecanyon.net/item/elitepack-css3-notification-boxes/520718?ref=arrowart"><img src="http://2.s3.envato.com/files/6035354/elitepack_thumbnail.png" alt="Elitepack CSS3 Notifications" /></a>
+<a href="http://codecanyon.net/item/elitepack-classic-css3-tags/541884?ref=arrowart"><img src="http://1.s3.envato.com/files/6272909/elitepack_tags_thumb.png" alt="Elitepack CSS3 Notifications" /></a>
+<a href="http://themeforest.net/item/kozuka-premium-html/461601?ref=arrowart"><img src="http://1.s3.envato.com/files/6677767/kozuka_thumbnail.png" alt="Kozuka HTML Template" /></a></p>
+
+
+<h5 style="font-size:18px;text-align:right;font-weight:normal;"><span style="font-size:13px;"><span style="font-size:18px;"><br /></span></span></h5><br />
+<div style="width:700px;border-top:1px dotted #808080;margin-left:-10px;margin:0;">
+
+</div>
+
+<p style="text-align:left;"><a href="http://themeforest.net?ref=arrowart">Arrowart</a> Copyright &copy; 2011. All Rights Reserved.</p>
+
+<p style="text-align:left;"><br /></p>
+                        <div class="cleared"></div>
+                        <p class="page-footer"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="cleared"></div>
+        </div>
+    </div>
+    <div class="cleared"></div>
+</div>
+	
+	 <!--js-->	
+<script type="text/javascript" src="./js/jquery.js"></script>
+<script type="text/javascript" src="./js/video.js"></script>
+ <script type="text/javascript">
+    // Must come after the video.js library
+
+    // Add VideoJS to all video tags on the page when the DOM is ready
+    VideoJS.setupAllWhenReady();
+</script>
+<script type="text/javascript">
+$(document).ready(function ($) {
+if ($('.showhide li').length > 0) {
+            var showhide = $('.showhide li');
+            showhide.each(function () {
+                var q = $(this);
+                q.children('.title').click(function () {
+                    q.children('div').slideToggle('fast', function () {})
+                })
+            })
+        }
+});
+
+function slide(div_id, button) {
+	if(button.value == 'x'){
+		$('#'+div_id).slideUp('normal');
+	}
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Regex Test</title>
+<script type="text/JavaScript">
+function valid(f) {
+	f.value = f.value.replace(/[^A-z0-9\s]/ig, '');
+} 
+function valid1(f) {
+!(/^[A-z0-9\s]*$/i).test(f.value)?f.value = f.value.replace(/[^A-z0-9\s]/ig,''):null;
+} 
+function valid2(f) {
+!(/^[A-z0-9]*$/i).test(f.value)?f.value = f.value.replace(/[^A-z0-9]/ig,''):null;
+} 
+</script>
+</head>
+
+<body>
+<form name="test" action="/" methos="post">
+	<input onkeyup="valid(this)" type="text" name="test" onClick="this.value=''" /><br />
+	<input onkeyup="valid1(this)" type="text" name="test" onClick="this.value=''" /><br />
+	<input onkeyup="valid2(this)" type="text" name="test" onClick="this.value=''" />
+</form>
+</body>
+</html>

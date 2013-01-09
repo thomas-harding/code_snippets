@@ -1,0 +1,7 @@
+Country,Region/State,City,"Zip/Postal Code From","Zip/Postal Code To","Weight From","Weight To","Shipping Price","Delivery Type"
+GBR,*,,,,0.0000,12.0000,5.9900,Standard
+GBR,*,,,,25.0000,36.0000,14.4000,Standard
+GBR,*,,,,61.0000,72.0000,27.0000,Standard
+GBR,*,,,,13.0000,24.0000,10.0000,Standard
+GBR,*,,,,37.0000,60.0000,17.9700,Standard
+GBR,*,,,,73.0000,144.0000,44.0000,

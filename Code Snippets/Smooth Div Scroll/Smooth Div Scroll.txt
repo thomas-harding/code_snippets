@@ -1,0 +1,84 @@
+/*** javascript ***/
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="/js/jquery.smoothDivScroll-1.1-min.js"></script>
+<script>
+$(document).ready(function($) {
+	$("div#makeMeScrollable").smoothDivScroll({ 
+		autoScroll: "always" , 
+		autoScrollDirection: "backandforth", 
+		autoScrollStep: 1, 
+		autoScrollInterval: 15,	
+		startAtElementId: "startAtMe", 
+		visibleHotSpots: "always"
+	});
+ });
+</script>
+
+
+
+/*** html ***/
+<div id="makeMeScrollable">
+	<div class="scrollingHotSpotLeft" style="display: block;"></div>
+	<div class="scrollingHotSpotRight"></div>
+	<div class="scrollWrapper">
+		<div class="scrollableArea">
+			<!-- content -->
+		</div>
+	</div>
+</div>
+
+
+
+/*** css ***/
+div.scrollingHotSpotLeft {
+    background-image: url("../images/big_transparent.gif");
+    background-position: center center;
+    background-repeat: repeat;
+    cursor: url("../images/cursors/cursor_arrow_left.png"), url("../images/cursors/cursor_arrow_left.cur"), w-resize;
+    height: 100%;
+    left: 0;
+    width: 50px;
+    position: absolute;
+    z-index: 200;
+}
+div.scrollingHotSpotLeftVisible {
+    background-image: url("../images/scroller_arrow_left.png");
+    background-repeat: no-repeat;
+    background-color:#efb917;
+    display:block !important;
+}
+div.scrollingHotSpotRight {
+    background-position: center center;
+    background-repeat: repeat;
+    cursor: url("../images/cursors/cursor_arrow_right.png"), url("../images/cursors/cursor_arrow_right.cur"), e-resize;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    width: 50px;
+    z-index: 200;
+}
+div.scrollingHotSpotRightVisible {
+    background-image: url("../images/scroller_arrow_right.png");
+    background-repeat: no-repeat;
+    background-color:#efb917;
+    display:block !important;
+}
+div.scrollWrapper {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+div.scrollableArea {
+    height: 100%;
+    position: relative;
+    width: auto;
+}
+#makeMeScrollable{
+    background:#efb917;
+    width:680px;
+    float:left;
+    height: 270px;
+    position: relative;
+}
+

@@ -1,0 +1,40 @@
+<?php $collection = Mage::getModel('catalog/product')->getCollection()
+			    ->addAttributeToSelect('featured')
+			    ->addAttributeToSelect('name')
+			    ->addAttributeToSelect('image')// select an attribute
+			    ->setPageSize(1) // limit number of results returned
+			    ->setCurPage(1); // set the offset (useful for pagination)
+			    //print_r($collection);
+			    // we iterate through the list of products to get attribute values
+			    $count = 0;
+			    foreach ($collection as $product) {
+				if($count<1){
+				    $count = $count+1;
+				    //echo $product->getName(); //get name
+				    //echo (float) $product->getPrice(); //get price as cast to float
+				    //echo $product->getDescription(); //get description
+				    //echo $product->getShortDescription(); //get short description
+				    //echo $product->getTypeId(); //get product type
+				    //echo $product->getStatus(); //get product status
+				
+				    // getCategoryIds(); returns an array of category IDs associated with the product
+				    foreach ($product->getCategoryIds() as $category_id) {
+				      $category = Mage::getModel('catalog/category')->load($category_id);
+				      //echo $category->getName();
+				      //echo $category->getParentCategory()->getName(); // get parent of category
+				    }
+				    //gets the image url of the product
+				    //echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'catalog/product'.$product->getImage();
+				    ?>
+				    <div class="featured_lot">
+					<h5>FEATURED LOT</h5>
+					<h6><?php echo $product->getName();?></h6>
+					<a href="<?php echo $product->getProductUrl(); ?>"><img src="/skin/frontend/custom/default/images/view_featured_overlay.png" alt="View" class="view_featured" /></a>
+					<span class="featured_part_number">PART NUMBER: <?php echo $product->getSKU(); ?></span>
+					<img src="/skin/frontend/custom/default/images/featured_overlay.png" class="featured_overlay" />
+					<img src="<?php echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).'catalog/product'.$product->getImage();  ?>" class="featured_image" width="373"/>
+				    </div>
+				    <?php 
+				    //echo $product->getSpecialPrice();
+				}
+			    } ?> 

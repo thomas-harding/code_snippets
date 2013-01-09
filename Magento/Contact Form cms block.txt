@@ -1,0 +1,1 @@
+{{block type="core/template" name="contactForm" form_action="/contacts/index/post" template="contacts/form.phtml"}}

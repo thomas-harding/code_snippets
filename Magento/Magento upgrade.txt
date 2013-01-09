@@ -1,0 +1,18 @@
+chmod 700 ./mage
+
+./mage mage-setup .
+./mage install community Mage_Downloader --force 
+./mage install community Mage_All_Latest --force
+
+chmod 700 ./mage
+
+./mage sync-pear
+./mage list-installed
+./mage list-upgrades
+./mage install http://connect20.magentocommerce.com/community Mage_All_Latest --force
+
+chmod 700 ./mage
+
+./mage config-set preferred_state beta
+./mage list-installed
+./mage list-upgrades

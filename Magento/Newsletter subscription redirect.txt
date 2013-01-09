@@ -1,0 +1,8 @@
+Redirect to a page after newsletter subscription
+
+template > newsletter > subscribe.phtml
+
+Add
+
+<input type="hidden" name="uenc" value="<?= Mage::helper('core')->urlEncode(Mage::app()->getStore()->getBaseUrl() . 'your_page_url_key') ?>"/>
+

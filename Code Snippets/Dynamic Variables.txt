@@ -1,0 +1,9 @@
+Try to define a dynamic Var:
+
+$item = "ABC";
+
+${"p_item{$item}"} = "value of this var";
+
+print $p_itemABC;
+
+would output "value of this var";

@@ -1,0 +1,27 @@
+<?php $collection = Mage::getModel('catalog/product')->getCollection()
+			    ->addAttributeToSelect('homepage') // select all attributes
+			    ->setPageSize(12) // limit number of results returned
+			    ->setCurPage(1); // set the offset (useful for pagination)
+			    
+			    // we iterate through the list of products to get attribute values
+			    foreach ($collection as $product) {
+			      echo $product->getName(); //get name
+			      echo (float) $product->getPrice(); //get price as cast to float
+			      echo $product->getDescription(); //get description
+			      echo $product->getShortDescription(); //get short description
+			      echo $product->getTypeId(); //get product type
+			      echo $product->getStatus(); //get product status
+			    
+			      // getCategoryIds(); returns an array of category IDs associated with the product
+			      foreach ($product->getCategoryIds() as $category_id) {
+				  $category = Mage::getModel('catalog/category')->load($category_id);
+				  echo $category->getName();
+				  echo $category->getParentCategory()->getName(); // get parent of category
+			      }
+			      //gets the image url of the product
+			      echo Mage::getBaseUrl(Mage_Core_Model_Store::URL_TYPE_MEDIA).
+				  'catalog/product'.$product->getImage();
+			      echo $product->getSpecialPrice();
+			      echo $product->getProductUrl();  //gets the product url
+			      echo '<br />';
+			    } ?>

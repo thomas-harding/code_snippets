@@ -1,0 +1,9 @@
+I went to:
+app/code/core/Mage/Tax/Model/Calculation.php Line 466
+and changed:  FROM 
+public function calcTaxAmount($price, $taxRate, $priceIncludeTax=false, $round=true)
+
+TO 
+public function calcTaxAmount($price, $taxRate, $priceIncludeTax=false, $round=false)
+
+I\’m using 1.6.0 and it worked for me.

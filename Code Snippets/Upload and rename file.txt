@@ -1,0 +1,21 @@
+$baseurl = "http://test.iqperformanceinstitute.com/uploads/profilepics/";
+		
+			$random_number = mt_rand(100000, 999999);
+			$filedate = date("ymd");
+			$filename = $_FILES['uploadedfile']['name'];
+			$ext = pathinfo($filename, PATHINFO_EXTENSION);
+			$newfilename = $random_number.$filedate.'.'.$ext;
+			
+		/* Add the original filename to our target path.  
+		Result is "uploads/filename.extension" */
+		
+			if(move_uploaded_file($_FILES['uploadedfile']['tmp_name'], "../uploads/profilepics/{$newfilename}"))
+			{
+				print '<p>Your first file has been uploaded successfully!</p>';
+				$filename = $newfilename;
+			}else{
+                $_SESSION['msgs'] = '0|File Upload Failed';
+               	header('Location: '.$return);
+                exit;
+			}
+		echo $filename;

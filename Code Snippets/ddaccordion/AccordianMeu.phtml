@@ -1,0 +1,36 @@
+<?php
+/* Get the categories that are active for the store */ $_main_categories=$this->getStoreCategories();
+/* Get the current category the user is in */   $_default_category=$this->getCurrentCategory();
+?>
+<div id="leftmenu">
+<?php
+if ($_main_categories):
+/* This bit cycles through the categories - setting the next one to current */
+foreach ($_main_categories as $_main_category):
+// if(($_main_category->getIsActive()) && ($_main_category->getId() != 37)): // Skip Category with ID of 37  if($_main_category->getIsActive()):
+$cur_category=Mage::getModel('catalog/category')->load($_main_category->getId());
+$layer = Mage::getSingleton('catalog/layer');
+$layer->setCurrentCategory($cur_category);
+?>
+<?php $_categories=$this->getCurrentChildCategories()?>
+<?php if($_categories->count()):?>
+<div><?php echo $this->getCurrentCategory()->getName();?></div>
+<div> <ul>
+<? foreach ($_categories as $_category):?>
+<? if($_category->getIsActive()):
+$cur_subcategory=Mage::getModel('catalog/category')->load($_category->getId()); $layer = Mage::getSingleton('catalog/layer'); $layer->setCurrentCategory($cur_subcategory);
+?>                          <li>&raquo; <a href="<?php echo $this->getCategoryUrl($_category)?>"><?php echo $_category->getName()?></a></li>
+<? endif;?>
+<?endforeach?>
+</ul> </div>
+<?else:?>
+<div><a href="<?php echo $this->getCategoryUrl($_main_category)?>"><?php echo $_main_category->getName();?></a></div>
+<?endif;?>
+<?php
+endif;
+endforeach;
+?>
+<?php endif; ?>
+<?php $layer->setCurrentCategory($_default_category);  ?>
+<div><a href="#">Information Page</a></div> <div><a href="#">Information Page</a></div> <div><a href="#">Information Page</a></div>
+</div>

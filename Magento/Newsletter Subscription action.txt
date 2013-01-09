@@ -1,0 +1,3 @@
+app > design > frontend > base > default > template > newsletter > subscribe.phtml
+
+<form action="<?php echo Mage::getUrl(); ?>newsletter/subscriber/new/" id="newsletter-validate-detail" method="post">

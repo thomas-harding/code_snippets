@@ -1,0 +1,68 @@
+////////////////////////////////////
+///
+///   Author: Steve Perry
+///   URL: steveperrycreative.com
+///   Twitter: @stevemarkperry
+///   Version: 1.0
+///   Date: 09.10.12
+///   Change Log:
+///
+////////////////////////////////////
+
+
+1. Change table prefix in wp-config.php to random generated.
+
+2. Secure wp-includes by adding the following to .htaccess – note that this should go outside '# BEGIN WordPress' and '# END WordPress' tags as WP can overwrite anything within those.
+
+# Block the include-only files.
+RewriteEngine On
+RewriteBase /
+RewriteRule ^wp-admin/includes/ - [F,L]
+RewriteRule !^wp-includes/ - [S=3]
+RewriteRule ^wp-includes/[^/]+\.php$ - [F,L]
+RewriteRule ^wp-includes/js/tinymce/langs/.+\.php - [F,L]
+RewriteRule ^wp-includes/theme-compat/ - [F,L]
+
+# BEGIN WordPress
+
+3. Secure wp-config.php by moving it outside the site. You can move the wp-config.php file to the directory above your WordPress install. This means for a site installed in the root of your webspace, you can store wp-config.php outside the web-root folder. 
+
+4. Disable file editing within the admin area by adding the following to wp-config.php:
+
+/** Disable admin editing of files. */
+define('DISALLOW_FILE_EDIT', true);
+
+5. Make 'admin' username something other than 'admin'.
+
+6. Don't post as admin, post as contributor and publish with admin.
+
+7. Use strong passwords.
+
+
+/////////////////////////////////////////////////
+///
+///   General file / folder permission notes:
+///
+/////////////////////////////////////////////////
+
+/ 
+    The root WordPress directory: all files should be writable only by your user account, except .htaccess if you want WordPress to automatically generate rewrite rules for you. 
+
+/wp-admin/ 
+    The WordPress administration area: all files should be writable only by your user account. 
+
+/wp-includes/ 
+    The bulk of WordPress application logic: all files should be writable only by your user account. 
+
+/wp-content/ 
+    User-supplied content: intended to be completely writable by all users (owner/user, group, and public). 
+
+Within /wp-content/ you will find:
+
+/wp-content/themes/ 
+    Theme files. If you want to use the built-in theme editor, all files need to be group writable. If you do not want to use the built-in theme editor, all files can be writable only by your user account. 
+
+/wp-content/plugins/ 
+    Plugin files: all files should be writable only by your user account. 
+
+Other directories that may be present with /wp-content/ should be documented by whichever plugin or theme requires them. Permissions may vary.

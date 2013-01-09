@@ -1,0 +1,44 @@
+<img style="display: none;" title="DANCE BORIS DANCE" id="b">
+
+
+$(function(){
+
+                // Totally definitely not easter-egg related stuff.
+                var eggs = {
+                    'boris': function() {
+                        var BORIS = $('#b');
+                        BORIS.attr({
+                            src: 'img/the-best-mayor-in-the-world.gif'
+                        })
+                        BORIS.fadeIn(150).click(function() {
+                            BORIS.fadeOut();
+                        });
+                    },
+                    'comic': function() {
+                        alert('TYPOGRAPHY IS FOR N00B5');
+                        $('body, html, input').css('font-family', 'Comic Sans MS, Comic Sans, Chalkboard, Papyrus, Jokerman MT, cursive').css('color', '#f0f');
+                    },
+                    'wonky': function() {
+                        $('body').css('-webkit-transform', 'rotate(3deg)');
+                    },
+                    'hello': function() {
+                        alert('is it me you’re looking for?');
+                        $('body, html, input').css('font-family', 'foo');
+                    }
+                };
+                var maxLength = 0;
+                for(var i in eggs){
+                    if(eggs.hasOwnProperty(i) && i.length > maxLength) maxLength = i.length;
+                }
+
+
+                var lastTyped = '';
+
+                $(document).keypress(function(e){
+                    lastTyped += String.fromCharCode(e.which);
+                    if(lastTyped.length > maxLength) lastTyped = lastTyped.slice(lastTyped.length - maxLength);
+                    for(var j in eggs){
+                      if(eggs.hasOwnProperty(j) && lastTyped.slice(lastTyped.length-j.length) == j) eggs[j]();
+                    }
+                });
+            });

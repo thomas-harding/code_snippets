@@ -1,0 +1,17 @@
+Country,Region/State,City,Zip/Postal Code,Zip to,Weight from,Weight to,Price From,Price To,Item From,Item To,Shipping Price,Algorithm,Delivery Type,Sort Order
+GBR,*,*,*,*,1,1,0,*,*,*,2.5,,Royal Mail First Class Post,*
+GBR,*,*,*,*,2,2,0,*,*,*,3.5,,Royal Mail First Class Post,*
+GBR,*,*,*,*,3,3,0,*,*,*,4.5,,Royal Mail First Class Post,*
+GBR,*,*,*,*,4,4,0,*,*,*,5.5,,Royal Mail First Class Post,*
+GBR,*,*,"BT,FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9,IM,IOM,ZE1,ZE2,ZE3,JE,GY",*,1,1,0,*,*,*,3,,Royal Mail First Class Post,*
+GBR,*,*,"BT,FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9,IM,IOM,ZE1,ZE2,ZE3,JE,GY",*,2,2,0,*,*,*,4,,Royal Mail First Class Post,*
+GBR,*,*,"BT,FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9,IM,IOM,ZE1,ZE2,ZE3,JE,GY",*,3,3,0,*,*,*,5,,Royal Mail First Class Post,*
+GBR,*,*,"BT,FK18,FK19,HS1,HS2,HS3,HS4,HS5,HS6,HS7,HS8,HS9,IM,IOM,ZE1,ZE2,ZE3,JE,GY",*,4,4,0,*,*,*,6,,Royal Mail First Class Post,*
+"BEL,IRL,LUX,JEY,GGY,NLD,FRA,DEU,AUT,ITA,PRT,ESP,DNK,FIN,SWE,CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,1,1,0,*,*,*,3.5,,Royal Mail First Class Post,*
+"BEL,IRL,LUX,JEY,GGY,NLD,FRA,DEU,AUT,ITA,PRT,ESP,DNK,FIN,SWE,CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,2,2,0,*,*,*,7,,Royal Mail First Class Post,*
+"BEL,IRL,LUX,JEY,GGY,NLD,FRA,DEU,AUT,ITA,PRT,ESP,DNK,FIN,SWE,CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,3,3,0,*,*,*,10.5,,Royal Mail First Class Post,*
+"BEL,IRL,LUX,JEY,GGY,NLD,FRA,DEU,AUT,ITA,PRT,ESP,DNK,FIN,SWE,CZE,EST,HUN,LVA,LTU,POL,SVK,SVN",*,*,*,*,4,4,0,*,*,*,14,,Royal Mail First Class Post,*
+*,*,*,*,*,1,1,0,*,*,*,5,,Royal Mail First Class Post,*
+*,*,*,*,*,2,2,0,*,*,*,10,,Royal Mail First Class Post,*
+*,*,*,*,*,3,3,0,*,*,*,15,,Royal Mail First Class Post,*
+*,*,*,*,*,4,4,0,*,*,*,20,,Royal Mail First Class Post,*

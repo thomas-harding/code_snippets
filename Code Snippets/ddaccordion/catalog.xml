@@ -1,0 +1,1 @@
+<reference name="left"> <block type="catalog/navigation" name="catalog.accordianmenu" template="catalog/navigation/AccordianMenu.phtml"/> </reference>

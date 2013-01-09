@@ -1,0 +1,66 @@
+Tabs
+
+javascript
+
+function toggleTabs(id){
+	//firstly change all tabs to light colour
+	var elements = document.getElementsByClassName('info_tab'),
+		n = elements.length;
+		for (var i = 0; i < n; i++) {
+			var e = elements[i];
+			e.style.background = "#D4DEE3";
+		}
+		
+	//now change the clicked tab to active colour
+	var tab=document.getElementById('tab_'+id);
+	tab.style.background = "#F1F1F1";
+	
+	//display none on all info boxes
+	var boxes = document.getElementsByClassName('info_box'),
+		m = boxes.length;
+		for (var l = 0; l < m; l++) {
+			var b = boxes[l];
+			b.style.display = "none";
+		}
+	
+	//now show active info box
+	var info=document.getElementById('info_'+id);
+	info.style.display = "block";
+}
+
+html
+
+<div class="info_tabs">
+            <div class="info_tab active_tab" id="tab_1">
+                <a href="javascript:toggleTabs('1');">DESCRIPTION</a>
+            </div>
+            <div class="info_tab" id="tab_2">
+                <a href="javascript:toggleTabs('2');">PREVIEW<br />INFORMATION</a>
+            </div>
+            <div class="info_tab" id="tab_3">
+                <a href="javascript:toggleTabs('3');">PAYMENT<br />INFORMATION</a>
+            </div>
+            <div class="info_tab" id="tab_4">
+                <a href="javascript:toggleTabs('4');">ASK A<br />QUESTION</a>
+            </div>
+            <div class="info_tab" id="tab_5">
+                <a href="javascript:toggleTabs('5');">MAKE<br />AN OFFER</a>
+            </div>
+        </div><!-- end info_tabs -->
+        <div class="info_boxes">
+            <div class="info_box" id="info_1">
+                <p>Box 1</p>
+            </div>
+            <div class="info_box" id="info_2" style="display:none;">
+                <p>Box 2</p>
+            </div>
+            <div class="info_box" id="info_3" style="display:none;">
+                <p>Box 3</p>
+            </div>
+            <div class="info_box" id="info_4" style="display:none;">
+                <p>Box 4</p>
+            </div>
+            <div class="info_box" id="info_5" style="display:none;">
+                <p>Box 5</p>
+            </div>
+        </div><!-- end info_boxes -->
