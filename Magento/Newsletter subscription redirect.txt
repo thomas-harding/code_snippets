@@ -4,5 +4,5 @@ template > newsletter > subscribe.phtml
 
 Add
 
-<input type="hidden" name="uenc" value="<?= Mage::helper('core')->urlEncode(Mage::app()->getStore()->getBaseUrl() . 'your_page_url_key') ?>"/>
+<input type="hidden" name="uenc" value="<?php echo Mage::helper('core')->urlEncode(Mage::app()->getStore()->getBaseUrl() . 'your_page_url_key') ?>"/>
 
